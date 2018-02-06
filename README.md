@@ -2,6 +2,8 @@
 
 PPA Add and Remove Repositorys
 
+Substitute ppa-purge at Debian and your childs.
+
 Only automates 'add-apt-repository' and 'add-apt-repository --remove':.
 
 For install use the bellow commands:
