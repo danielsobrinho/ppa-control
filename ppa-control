@@ -1,0 +1,19 @@
+#!/bin/bash
+
+action=$1
+ppa=$2
+
+if [ -z $ppa ]; then
+        echo "PPA not defined"
+        exit
+fi
+
+if [ $action = 'add' ]; then
+        sudo add-apt-repository $ppa
+        #echo ""
+elif [ $action = 'remove' ]; then
+        sudo add-apt-repository --remove $ppa
+        #echo ""
+else
+        echo "Action not defined."
+fi
